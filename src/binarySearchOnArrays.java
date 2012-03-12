@@ -44,7 +44,13 @@ public class binarySearchOnArrays {
 		 * Work with your partner and add code here! This is a sample interview question
 		 * that Google, Facebook, etc. will ask
 		 */
-		
-		return -1;
+		int mid = (low + high) / 2;
+		if(arr[mid]>target)
+			return searchViaBinary(arr, lowerBound, mid-1, target);
+		else if(arr[mid] < target)
+			return searchViaBinary(arr, mid + 1, upperBound, target);
+		else
+			return mid;
+		}
 	}
 }
