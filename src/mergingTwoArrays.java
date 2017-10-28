@@ -9,7 +9,7 @@ public class mergingTwoArrays {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Set variables for integer array
 		int[] a = new int[7];
 		a[0] = 2;
 		a[1] = 4;
@@ -26,7 +26,7 @@ public class mergingTwoArrays {
 		int indexB = lastB - 1; //index of last element in b
 		int indexMerged = lastB + lastA - 1;
 
-		/* merge a and b */
+		/* merge integer array a and b */
 
 		for(int i = 0; i < lastB; i++){
 			a[i + lastA] = b[i];			
